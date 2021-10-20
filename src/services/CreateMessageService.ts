@@ -22,7 +22,7 @@ class CreateMessageService {
 				avatar_url: message.user.avatar_url,
 			},
 		};
-		console.log(infoWS);
+
 		io.emit("new_message", infoWS);
 
 		return message;
